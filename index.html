@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./cs/style.css">
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+    <link href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css" rel="stylesheet">
+    <title>Sistema de cadastro</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+          <span>Cadastro de Funcionários</span>
+          <button onclick="openModal()" id="new">Adicionar</i></button>
+        </div>
+    
+        <div class="divTable">
+          <table>
+            <thead>
+              <tr>
+                <th>Nome</th>
+                <th>Função</th>
+                <th>Salário</th>
+                <th class="acao">Editar</th>
+                <th class="acao">Excluir</th>
+              </tr>
+            </thead>
+            <tbody>
+            </tbody>
+          </table>
+        </div>
+    
+        <div class="modal-container">
+          <div class="modal">
+            <form>
+              <label for="m-nome">Nome</label>
+              <input id="m-nome" type="text" required />
+      
+              <label for="m-funcao">Função</label>
+              <input id="m-funcao" type="text" required />
+      
+              <label for="m-salario">Salário</label>
+              <input id="m-salario" type="number" required />
+              <button id="btnSalvar">Salvar</button>
+            </form>
+          </div>
+        </div>
+    
+      </div>
+      <footer class="C-rodape">
+        <div class="C-icon">
+          <a href="https://github.com/humberto-de-freitas-developer" target="_blank">
+              <span class="icon">
+                  <ion-icon name="logo-github"></ion-icon>
+              </span>
+          </a>
+
+          <a href="https://www.linkedin.com/in/humberto-neto-04836b184/" target="_blank">
+              <span class="icon">
+                  <ion-icon name="logo-linkedin"></ion-icon>
+              </span>
+          </a>
+      </div>
+      </footer>
+</body>
+<script src="./js/script.js"></script>
+
+</html>
